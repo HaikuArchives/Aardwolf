@@ -1,0 +1,26 @@
+Aardwolf
+
+(c) 1998, Tim Vernum (zodsoft@kagi.com)
+
+Some applications require their input on the commandline, yet produce no output to a terminal window. Most archivers (eg zip) behave in this way. Some of these applications also have means of being launched from Tracker (eg Archives are launched through Expander). Aardwolf is a generic means for performing this task.
+
+I wrote Aardwolf in order to launch postscript files with Ghostview, which only takes files on the commandline, however it may be useful for many other tasks.
+
+There are two applications "Aardwolf" is the utility to launch files, "AardwolfConfig" allows you to associate commands with MIME-Types.
+
+There are compiled versions for r4/x86
+
+Aardwolf
+This is intended to be associated with a particular file-type. It is written to open any type, but you should modify your filetypes database to associate with MIME-types as you find appropriate. The easiest way to do this, is to launch a file of that type (eg a postscript file) and then when Tracker informs you that there is no application for that filetype, "Select and make preferred" Aardwolf.
+
+AardwolfConfig
+Before Aardwolf can actually do anything with a file though, it must know how to respond to that filetype. AardwolfConfig is used for that. Double-Click on the AardwolfConfig application to launch it. Click the "Add" button to add a new type. For the "type" field enter the exact MIME-type for the files you wish to open (eg "application/postscript") and then the full commandline for the commandline application as the "command" (eg /boot/apps/Ghostscript/gs" )
+Click OK, and quit from AardwolfConfig.
+
+[NB: You can use a "%s" in the command to refer to the path of the file being opened. eg "make -f %s 2> /tmp/make.err"]
+
+Licence
+Aardwolf is released under the GNU General Public Licence, version 2, the contents of which may be found in the file "copyleft" included in this distribution.
+Source is included. There are plenty of possible improvements, although I have no current plans to extend the application, as it now serves my needs. However if anyone wants to send me patches, I will intergrate them and re-release Aardwolf. 
+
+Also included are files in the folder named "icons" these are merely a few icons I use for files, use them if you would like.
